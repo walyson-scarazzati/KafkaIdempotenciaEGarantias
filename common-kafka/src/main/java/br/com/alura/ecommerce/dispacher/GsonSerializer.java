@@ -1,13 +1,12 @@
-package br.com.alura.ecommerce;
+package br.com.alura.ecommerce.dispacher;
 
 import org.apache.kafka.common.serialization.Serializer;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import org.apache.kafka.common.serialization.Serializer;
+import br.com.alura.ecommerce.Message;
+import br.com.alura.ecommerce.MessageAdapter;
 
 public class GsonSerializer<T> implements Serializer<T> {
 

@@ -2,12 +2,13 @@ package br.com.alura.ecommerce;
 
 import java.io.File;
 import java.io.IOException;
-import java.math.BigDecimal;
 import java.nio.file.Path;
 import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
+
+import br.com.alura.ecommerce.consumer.KafkaService;
 
 public class ReadingReportService {
 	private static final Path SOURCE = new File("src/main/resources/report.txt").toPath();

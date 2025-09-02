@@ -1,6 +1,5 @@
 package br.com.alura.ecommerce;
 
-import java.math.BigDecimal;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -9,6 +8,8 @@ import java.util.UUID;
 import java.util.concurrent.ExecutionException;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
+
+import br.com.alura.ecommerce.consumer.KafkaService;
 
 public class CreateUserService {
 

@@ -6,10 +6,12 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.UUID;
 import java.util.concurrent.ExecutionException;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
+
+import br.com.alura.ecommerce.consumer.KafkaService;
+import br.com.alura.ecommerce.dispacher.KafkaDispatcher;
 
 public class BatchSendMessageService {
 	private final Connection connection;
