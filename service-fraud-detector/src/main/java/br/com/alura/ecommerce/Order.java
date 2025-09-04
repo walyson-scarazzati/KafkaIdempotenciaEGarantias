@@ -21,6 +21,10 @@ public class Order {
         return amount;
     }
 
+	public String getOrderId() {
+		return orderId;
+	}
+
 	@Override
 	public String toString() {
 		return "Order [orderId=" + orderId + ", amount=" + amount + ", email=" + email + "]";
